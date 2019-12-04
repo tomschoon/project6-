@@ -8,23 +8,23 @@ body {
 }
 /*===================Begin of the nav-bar================*/
 nav {
-  height: 50px;               /* size of the navabar border*/
-  background: #e56a54;      /* color of the background of navbar*/
+  height: 50px;                       /* size of the navabar border*/
+  background: #e56a54;              /* color of the background of navbar*/
 }
 
 .nav-links {
-  display: flex;
-  list-style: none;
-  width: 50%;
-  height: 100%;
-  justify-content: space-around;
+  display: flex;                      /*this will set the buttons on a horizontal way see navbar*/
+  list-style: none;                   /*no style added on the buttons*/
+  width: 100%;                        /*witdh of the container bottuns nav-bar*/
+  height: 100%;                       /*height of the text*/
+  justify-content: space-around;      /*spaing of the buttons (home, dashboard, login)*/
   align-items: center;
 }
 /* text in the nav-bar */
 .nav-links li a {
-  color: #00555c;           /* color of the text*/
-  font-size: 16px;            /* size of the font*/
-  text-decoration: none;      /* this wil delete the line below the text*/
+  color: #00555c;                   /* color of the text*/
+  font-size: 16px;                    /* size of the font*/
+  text-decoration: none;              /* this wil delete the line below the text*/
 }
 
 .landing {
@@ -36,7 +36,7 @@ nav {
 
 /* Size and color of the H1 adjusments*/
 .landing h1 {
-  margin: 50px;               /* size of the box adjusting */
-  font-size: 50px;            /* size if the font*/
-  color: #00555c;           /* color of the text */
+  margin: 50px;                       /* size of the box adjusting */
+  font-size: 50px;                    /* size if the font*/
+  color: #00555c;                   /* color of the text */
 }
