@@ -1,0 +1,42 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  font-family: sans-serif;
+}
+/*===================Begin of the nav-bar================*/
+nav {
+  height: 50px;               /* size of the navabar border*/
+  background: #e56a54;      /* color of the background of navbar*/
+}
+
+.nav-links {
+  display: flex;
+  list-style: none;
+  width: 50%;
+  height: 100%;
+  justify-content: space-around;
+  align-items: center;
+}
+/* text in the nav-bar */
+.nav-links li a {
+  color: #00555c;           /* color of the text*/
+  font-size: 16px;            /* size of the font*/
+  text-decoration: none;      /* this wil delete the line below the text*/
+}
+
+.landing {
+  height: 90vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* Size and color of the H1 adjusments*/
+.landing h1 {
+  margin: 50px;               /* size of the box adjusting */
+  font-size: 50px;            /* size if the font*/
+  color: #00555c;           /* color of the text */
+}
