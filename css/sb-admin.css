@@ -2,9 +2,15 @@
     created: 2-dec-2019, 11:31
     author : Maikel Nelis
 */
-.root{
+    :root{
+    
+        --MainPrimaryColor: #e56a54  ;	/* Darkblue */
+        --SecondaryColor: #00555c ;       /*whitesmoke*/
+    --White:#ffff;           /*darker shade of gray*/
+    --Black: #000000  ;     /*shade of darker blue*/
+    --darkestBlue: #170B44    ;       /*DarkestBlue*/
+    }
 
-}
 
           /* Style page content */
 .main {
@@ -15,5 +21,5 @@
  
  .topnav{
      padding-left:      40%;
-     background-color: red;
+     background-color: Var(--MainPrimaryColor);
  }       
