@@ -82,24 +82,25 @@ width:75% ;
 }
 /* styling filinbox*/
 .form{
-  position: relative;/**/
-  z-index: 1;/**/
-  background: var(--TrueWhite);/**/
-  max-width: 360px;/**/
+  position: relative;/* th position on te page is not stuck*/
+  z-index: 1;/* for the top position*/
+  background: var(--TrueWhite);/* background is white for the box*/
+  max-width: 360px;/* the width*/
   margin: 0 auto 110px;/**/
   padding: 45px;/**/
-  text-align: center;/**/
+  text-align: center;/* to center the text*/
   box-shadow: 0 0 20px 0  var(--Trueblack 0.2), 0 5px 5px 0 var(--Trueblack  0.24);/**/
 }
+/**/
 .form input{
-  font-family: Arial, Helvetica, sans-serif;
-  text-transform: uppercase;
-  outline: 0;
-  background: var(--lightGray);
-  width: 100%;
-  border: 0;
-  padding: 15px;
-  box-sizing: border-box;
+  font-family: Arial, Helvetica, sans-serif;/**/
+  text-transform: uppercase;/**/
+  outline: 0;/**/
+  background: var(--lightGray);/**/
+  width: 100%;/**/
+  border: 0;/**/
+  padding: 15px;/**/
+  box-sizing: border-box;/**/
   font-size: 14px;
   
 }
@@ -165,8 +166,7 @@ width:75% ;
 .container .info span .fa {
   color: #EF3B3A;
 }
-body{
+body {
   background-color: var(--SecondaryColor);
-   
 }
-/*============= end of login page CSS===
+/*============= end of login page CSS================*/
