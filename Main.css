@@ -63,20 +63,22 @@ width:75% ;
 
 /*============= end of content containers================*/
 /*==================Login page CSS===================*/
+/**/
 .loginpage{
-  width: 360px;
-  padding:8%  0 0;
-  margin: auto;
+  width: 360px;/*the width of the log in*/
+  padding:8%  0 0;/**/
+  margin: auto;/**/
 }
+/**/
 .form{
-  position: relative;
-  z-index: 1;
-  background: var(--TrueWhite);
-  max-width: 360px;
-  margin: 0 auto 110px;
-  padding: 45px;
-  text-align: center;
-  box-shadow: 0 0 20px 0  var(--Trueblack 0.2), 0 5px 5px 0 var(--Trueblack  0.24);
+  position: relative;/**/
+  z-index: 1;/**/
+  background: var(--TrueWhite);/**/
+  max-width: 360px;/**/
+  margin: 0 auto 110px;/**/
+  padding: 45px;/**/
+  text-align: center;/**/
+  box-shadow: 0 0 20px 0  var(--Trueblack 0.2), 0 5px 5px 0 var(--Trueblack  0.24);/**/
 }
 .form input{
   font-family: Arial, Helvetica, sans-serif;
