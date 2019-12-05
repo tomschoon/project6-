@@ -28,15 +28,21 @@ nav {
 }
 
 .landing {
-  height: 90vh;
+  height: 50vh;
   display: flex;
   justify-content: center;
   align-items: center;
 }
+/*====================End if the Nav-Bar==================*/
 
 /* Size and color of the H1 adjusments*/
 .landing h1 {
   margin: 50px;                       /* size of the box adjusting */
   font-size: 50px;                    /* size if the font*/
   color: #00555c;                   /* color of the text */
+}
+.table{
+  text-align: center;
+  margin: auto;
+
 }
