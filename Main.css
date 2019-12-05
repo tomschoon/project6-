@@ -66,10 +66,10 @@ width:75% ;
 /**/
 .loginpage{
   width: 360px;/*the width of the log in*/
-  padding:8%  0 0;/**/
-  margin: auto;/**/
+  padding:8%  0 0;/* padding */
+  margin: auto;/* the maring of te login box*/
 }
-/**/
+/* styling filinbox*/
 .form{
   position: relative;/**/
   z-index: 1;/**/
