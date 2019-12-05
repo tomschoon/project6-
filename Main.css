@@ -79,7 +79,7 @@ width:75% ;
   box-shadow: 0 0 20px 0  var(--Trueblack 0.2), 0 5px 5px 0 var(--Trueblack  0.24);
 }
 .form input{
-  font-family: ;
+  font-family: Arial, Helvetica, sans-serif;
   text-transform: uppercase;
   outline: 0;
   background: var(--lightGray);
@@ -152,7 +152,7 @@ width:75% ;
 .container .info span .fa {
   color: #EF3B3A;
 }
-body {
+.loginbody {
   background-color: var(--SecondaryColor);
    
 /*============= end of login page CSS================*/
