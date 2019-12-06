@@ -42,86 +42,230 @@ nav {
   font-size: 50px;                    /* size if the font*/
   color: #00555c;                   /* color of the text */
 }
-
-@import url('https://fonts.googleapis.com/css?family=Rubik:300,400,500');
-
-table {
-  /* position relative to include a band on the left of the container */
-  margin: 0rem 1rem;
-  position: relative;
-  /* cap the width of the table, allowing for a sizeable portion of white space if allowed by the viewport */
-  width: calc(90vw - 2rem);
-  max-width: 800px;
-  /* spacing to separate the table rows vertically */
-  border-spacing: 0 1rem;
-}
-/* with a pseudo element add a band with a repeating linear gradient */
-table:before {
+/*--------------------
+Leaderboard
+--------------------*/
+.leaderboard {
   position: absolute;
-  content: '';
-  right: calc(100% + 1rem);
-  top: 0;
-  height: 100%;
-  width: 1.5rem;
-  border-radius: 5px;
-  border: 1px solid #38383F;
-  background: repeating-linear-gradient(-45deg, #15151E 0px, #15151E 4px, #38383F 4px, #38383F 8px);
-}
-/* center every element nested in a table row */
-table tr > * {
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 285px;
+  height: 308px;
+  background: linear-gradient(to bottom, #3a404d, #181c26);
+  border-radius: 10px;
+  box-shadow: 0 7px 30px rgba(62, 9, 11, .3);
   text-align: center;
-  padding: 0.5rem;
-}
-/* align every second item of each row to the left */
-table tr > *:nth-child(2) {
-  text-align: left;
-}
+
+  h1 {
+    font-size: 18px;
+    color: #e1e1e1;
+    padding: 12px 13px 18px;
+
+    & svg {
+      width: 25px;
+      height: 26px;
+      position: relative;
+      top: 3px;
+      margin-right: 6px;
+      vertical-align: baseline;
+    }
+
+  }
+
+  ol {
+    counter-reset: leaderboard;
+
+    li {
+      position: relative;
+      z-index: 1;
+      font-size: 14px;
+      counter-increment: leaderboard;
+      padding: 18px 10px 18px 50px;
+      cursor: pointer;
+      backface-visibility: hidden;
+      transform: translateZ(0) scale(1.0, 1.0);
 
 
-/* style the headings to have thin uppercase titles for the columns */
-table th {
-  font-weight: 300;
-  letter-spacing: 0.04rem;
-  font-size: 0.9rem;
-  color: #eee;
-  text-transform: uppercase;
+      &::before {
+        content: counter(leaderboard);
+        position: absolute;
+        z-index: 2;
+        top: 15px;
+        left: 15px;
+        width: 20px;
+        height: 20px;
+        line-height: 20px;
+        color: #c24448;
+        background: #fff;
+        border-radius: 20px;
+        text-align: center;
+      }
+
+      mark {
+        position: absolute;
+        z-index: 2;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        padding: 18px 10px 18px 50px;
+        margin: 0;
+        background: none;
+        color: #fff;
+
+        &::before, &::after {
+          content: '';
+          position: absolute;
+          z-index: 1;
+          bottom: -11px;
+          left: -9px;
+          border-top: 10px solid #c24448;
+          border-left: 10px solid transparent;
+          transition: all .1s ease-in-out;
+          opacity: 0;
+        }
+
+        &::after {
+          left: auto;
+          right: -9px;
+          border-left: none;
+          border-right: 10px solid transparent;
+        }
+      }
+
+      small {
+        position: relative;
+        z-index: 2;
+        display: block;
+        text-align: right;
+      }
+
+      &::after {
+        content: '';
+        position: absolute;
+        z-index: 1;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background: #fa6855;
+        box-shadow: 0 3px 0 rgba(0, 0, 0, .08);
+        // transform: scaleX(1.06) scaleY(1.03);
+        transition: all .3s ease-in-out;
+        opacity: 0;
+      }
+
+      &:nth-child(1) {
+        background: #fa6855;
+        &::after {
+          background: #fa6855;
+        }
+      }
+
+      &:nth-child(2) {
+        background: #e0574f;
+        &::after {
+          background: #e0574f;
+          box-shadow: 0 2px 0 rgba(0, 0, 0, .08);
+        }
+
+        & mark {
+          &::before, &::after {
+            border-top: 6px solid #ba4741;
+            bottom: -7px;
+          }
+        }
+      }
+
+      &:nth-child(3) {
+        background: #d7514d;
+        &::after {
+          background: #d7514d;
+          box-shadow: 0 1px 0 rgba(0, 0, 0, .11);
+        }
+
+        & mark {
+          &::before, &::after {
+            border-top: 2px solid #b0433f;
+            bottom: -3px;
+          }
+        }
+      }
+
+      &:nth-child(4) {
+        background: #cd4b4b;
+        &::after {
+          background: #cd4b4b;
+          box-shadow: 0 -1px 0 rgba(0, 0, 0, .15);
+        }
+
+        & mark {
+          &::before, &::after {
+            top: -7px;
+            bottom: auto;
+            border-top: none;
+            border-bottom: 6px solid #a63d3d;;
+          }
+        }
+      }
+
+      &:nth-child(5) {
+        background: #c24448;
+        border-radius: 0 0 10px 10px;
+        &::after {
+          background: #c24448;
+          box-shadow: 0 -2.5px 0 rgba(0, 0, 0, .12);
+          border-radius: 0 0 10px 10px;
+        }
+
+        & mark {
+          &::before, &::after {
+            top: -9px;
+            bottom: auto;
+            border-top: none;
+            border-bottom: 8px solid #993639;
+          }
+        }
+      }
+
+    }
+
+    // hover
+    li:hover {
+      z-index: 2;
+      overflow: visible;
+
+      &::after {
+        opacity: 1;
+        transform: scaleX(1.06) scaleY(1.03);
+      }
+
+      & mark {
+        &::before, &::after {
+          opacity: 1;
+          transition: all .35s ease-in-out;
+        }
+      }
+    }
+
+  }
 }
 
-/* slightly increase the weight of the cell describing the position */
-table td.position {
-  font-weight: 500;
+* {
+  //display: none;
 }
 
-/* style the cell with the driver visually separating the first, last name and team */
-table td.driver {
-  padding-left: 1rem;
-  font-size: 1.1rem;
-  letter-spacing: 0.05rem;
-}
-table td.driver strong {
-  text-transform: uppercase;
-  font-weight: 500;
-}
-table td.driver span {
-  text-transform: capitalize;
-  margin-left: 0.75rem;
-  font-size: 0.8rem;
-  color: #999;
-  letter-spacing: initial;
-}
-
-/* style the span nested in the last cell to have the gap in a rounded rectangle */
-table td.gap span {
-  background: #38383F;
-  border-radius: 30px;
-  padding: 0.5rem 0.75rem;
-  font-size: 0.8rem;
-  text-transform: uppercase;
-}
-
-/* on smaller viewports remove the third column from sight */
-@media (max-width: 500px) {
-  table tr > *:nth-child(3) {
-    display: none;
+.the-most {
+  position: fixed;
+  z-index: 1;
+  bottom: 0;
+  left: 0;
+  width: 50vw;
+  max-width: 200px;
+  padding: 10px;
+  
+  img {
+    max-width: 100%;
   }
 }
