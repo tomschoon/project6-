@@ -87,14 +87,16 @@ td{
     font-size: 18px;
     color: #e1e1e1;
     padding: 12px 13px 18px;
+}
 
 /* demo styles */
 
 @import url(https://fonts.googleapis.com/css?family=Roboto:400,500,300,700);
-body{
-background: gray;
-background: gray;
+body {
+background: #00555c;
+background: #00555c;
 }
+
 section{
   margin: 50px;
 }
