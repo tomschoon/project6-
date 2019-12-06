@@ -25,60 +25,62 @@
 body {
   font-family: sans-serif;
 }
+
 /*===================Begin of the nav-bar================*/
 nav {
-  height: 50px;               /* size of the navabar border*/
-  background: #e56a54;      /* color of the background of navbar*/
+  height: 50px;                   /* size of the navabar border*/
+  background: #e56a54;          /* color of the background of navbar*/
+}
+.nav-links {                      /*positioninng of the menu bar*/
+  display: flex;                  /* posotion of the navbar buttons*/
+  list-style: none;               /* no style added in buttons*/
+  width: 100%;                    /* width of the text*/
+  height: 100%;                   /*height of the text*/
+  justify-content: space-around;  /* that there is some space around the buttons top navbar*/
+  align-items: center;            /*center the buttons*/
 }
 
-.nav-links {
-  display: flex;
-  list-style: none;
-  width: 100%;
-  height: 100%;
-  justify-content: space-around;
-  align-items: center;
-}
-/* text in the nav-bar */
-.nav-links li a {
-  color: #00555c;           /* color of the text*/
-  font-size: 16px;            /* size of the font*/
-  text-decoration: none;      /* this wil delete the line below the text*/
+.nav-links li a {                 /*text in the nvbar*/
+  color: #00555c;               /* color of the text*/
+  font-size: 16px;                /* size of the font*/
+  text-decoration: none;          /* this wil delete the line below the text*/
 }
 
 .landing {
-  height: 90vh;
+  height: 90vh;                   /* the height of the navbar*/
   display: flex;
   justify-content: center;
-  align-items: center;
+  align-items: center;            /* center the navbar*/
 }
 
-/* Size and color of the H1 adjusments*/
-.landing h1 {
-  margin: 50px;               /* size of the box adjusting */
-  font-size: 50px;            /* size if the font*/
-  color: #00555c;           /* color of the text */
+.landing h1 {                     /* Size and color of the H1 adjusments*/
+  margin: 50px;                   /* size of the box adjusting */
+  font-size: 50px;                /* size if the font*/
+  color: #00555c;               /* color of the text */
 }
-/*============= end of the nav-bar================*/
+/*================== end of the nav-bar==================*/
+
 /*============= end of contend containers================*/
-.outerContainer{
-width:70% ;
+
+.outerContainer{                  /* content of the outercontainer*/
+width:70% ;                       /* width of the outerbox*/
 
 }
-.innerContainer{
-width:80% ;
+.innerContainer{                  /* content of the innercontainer*/
+width:80% ;                       /* width of the innercontainer*/
 }
-.boxcontainer{
-width:75% ;
+.boxcontainer{                    /* content of the box container*/
+width:75% ;                       /* width of the width of the box container*/
 }
 
 /*============= end of content containers================*/
-/*==================Login page CSS===================*/
-/**/
-.loginpage{
-  width: 360px;/*the width of the log in*/
-  padding:8%  0 0;/* padding */
-  margin: auto;/* the maring of te login box*/
+
+/*===================Login page CSS======================*/
+
+.loginpage{                       /* content of the login pagina*/
+  width: 360px;                   /*the width of the log in*/
+  padding:8%  0 0;                /* padding */
+  margin: auto;                   /* the maring of te login box*/
 }
 /* styling filinbox*/
 .form{
@@ -170,10 +172,11 @@ body {
   background-color: var(--SecondaryColor);
 }
 /*============= end of login page CSS================*/
+
 /*===========START OF THE CSS TABLE STYLE==================*/
-h1{
+h1{                                           /* content of the h1 */
   font-size: 30px;
-  color: #fff;
+  color: #fff;                              /* color of the text */
   text-transform: uppercase;
   font-weight: 300;
   text-align: center;
@@ -216,44 +219,15 @@ td{
     padding: 12px 13px 18px;
 }
 
-/* demo styles */
-
 @import url(https://fonts.googleapis.com/css?family=Roboto:400,500,300,700);
 body {
-background: #00555c;
-background: #00555c;
+background: #00555c;          /* background color */
+background: #00555c;          /* background color */
 }
 
 section{
   margin: 50px;
 }
-
-
-/* follow me template */
-.made-with-love {
-  margin-top: 40px;
-  padding: 10px;
-  clear: left;
-  text-align: center;
-  font-size: 10px;
-  font-family: arial;
-  color: #fff;
-}
-.made-with-love i {
-  font-style: normal;
-  color: #F50057;
-  font-size: 14px;
-  position: relative;
-  top: 2px;
-}
-.made-with-love a {
-  color: #fff;
-  text-decoration: none;
-}
-.made-with-love a:hover {
-  text-decoration: underline;
-}
-
 
 /* for custom scrollbar for webkit browser*/
 
