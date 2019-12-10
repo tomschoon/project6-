@@ -82,44 +82,44 @@ width:75% ;                       /* width of the width of the box container*/
   padding:8%  0 0;                /* padding */
   margin: auto;                   /* the maring of te login box*/
 }
-/* styling filinbox*/
+                                  /* styling filinbox*/
 .form{
-  position: relative;/* th position on te page is not stuck*/
-  z-index: 1;/* for the top position*/
-  background: var(--TrueWhite);/* background is white for the box*/
-  max-width: 360px;/* the width*/
-  margin: 0 auto 110px;/**/
-  padding: 45px;/**/
-  text-align: center;/* to center the text*/
+  position: relative;             /* the position on te page is not stuck*/
+  z-index: 1;                     /* for the top position*/
+  background: var(--TrueWhite);   /* background is white for the box*/
+  max-width: 360px;               /* the width*/
+  margin: 0 auto 110px;           /* the margin*/
+  padding: 45px;                  /*padding for form*/
+  text-align: center;             /* to center the text*/
   box-shadow: 0 0 20px 0  var(--Trueblack 0.2), 0 5px 5px 0 var(--Trueblack  0.24);/**/
 }
-/*form  input box*/
+                                  /*form  input box*/
 .form input{
-  font-family: Arial, Helvetica, sans-serif;/**/
-  text-transform: uppercase;/**/
-  outline: 0;/* outline none*/
-  background: var(--lightGray);/* light gray color*/
-  width: 100%;/* the width is 100px*/
-  border: 0;/* no border */
-  padding: 15px;/*15 px boder*/
-  box-sizing: border-box;/* type border is box*/
+  font-family: Arial, Helvetica, sans-serif;/* font Arial*/
+  text-transform: uppercase;                /* upper case*/
+  outline: 0;                               /* outline none*/
+  background: var(--lightGray);             /* light gray color*/
+  width: 100%;                              /* the width is 100px*/
+  border: 0;                                /* no border */
+  padding: 15px;                            /*15 px boder*/
+  box-sizing: border-box;                   /* type border is box*/
   font-size: 14px;
   
 }
 /* for the botton for confirming*/
 .form button {
-  font-family: Arial, Helvetica, sans-serif, ;/**/
-  text-transform: uppercase;/**/
-  outline: 0;/* formbuton has 0 outline*/
-  background: var(--SecondaryColor);/* has a grenisch color*/
-  width: 100%;/* buton is 100 px*/
-  border: 0;/* 0 border for button*/
-  padding: 15px;/* 15 px padding*/
-  color: var(--TrueWhite);/* a wite background*/
-  font-size: 14px;/* the fontsize*/
-  -webkit-transition: all 0.3 ease;/**/
-  transition: all 0.3 ease;/**/
-  cursor: pointer;/* fot pointer animations*/
+  font-family: Arial, Helvetica, sans-serif, ;/* arial*/
+  text-transform: uppercase;                  /*upper case*/
+  outline: 0;                                 /* formbuton has 0 outline*/
+  background: var(--SecondaryColor);          /* has a grenisch color*/
+  width: 100%;                                /* button is 100 px*/
+  border: 0;                                  /* 0 border for button*/
+  padding: 15px;                              /* 15 px padding*/
+  color: var(--TrueWhite);                    /* a wite background*/
+  font-size: 14px;                            /* the fontsize*/
+  -webkit-transition: all 0.3 ease;           /*for the transation*/
+  transition: all 0.3 ease;
+  cursor: pointer;                            /* for pointer animations*/
 }
 /* to make the hover color switch in te button*/
 .form button:hover,.form button:active,.form button:focus {
@@ -127,24 +127,24 @@ width:75% ;                       /* width of the width of the box container*/
 }
 /* for the grey fil in */
 .form .message {
-  margin: 15px 0 0;/*box size*/
-  color: var(--graycolor);/* the color*/
-  font-size: 12px; /*fontsize is 14 px*/
+  margin: 15px 0 0;                   /*box size*/
+  color: var(--graycolor);            /* the color*/
+  font-size: 12px;                    /*fontsize is 14 px*/
 }
 /**/
 .form .message a {
-  color: var(--SecondaryColor); /*message color is green*/
+  color: var(--SecondaryColor);       /*message color is green*/
   text-decoration: none;
 }
 /* to let you see tthis form*/
 .form .register-form {
-  display:relative;/*for the visibilitie element Register-form */
+  display:relative;                 /*for the visibilitie element Register-form */
 }
 /* for te container */
 .container {
   position: relative;
-  z-index: 1; /*positon container*/
-  max-width: 300px;/*with of container*/
+  z-index: 1;                       /*positon container*/
+  max-width: 300px;                 /*with of container*/
   margin: 0 auto;
 }
 /**/
@@ -153,10 +153,10 @@ width:75% ;                       /* width of the width of the box container*/
   display: block;/**/
   clear: both;/**/
 }
-/**/
+/*container info styling*/
 .container .info {
-  margin: 50px auto;/* for the margin*/
-  text-align: center;/* position text*/
+  margin: 50px auto;      /* for the margin*/
+  text-align: center;     /* position text*/
 }
 /* container stylings  have to look when seen*/
 .container .info h1 {
